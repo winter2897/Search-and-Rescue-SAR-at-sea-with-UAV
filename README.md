@@ -20,7 +20,7 @@ Install the required libraries:
     conda install -c anaconda cudnn=7.6.5
     conda install -c anaconda cudatoolkit=10.0.130
 
-We provide a configuration file for the UAV [settings.json](https://drive.google.com/file/d/1COC-uGJZrwiN0prTnnxt4UzI9AGvXMMS/view?usp=sharing) move this file to directory: ```C:\Users\DoTrongTuan\Documents\AirSim``` and [Ocean Environment](https://drive.google.com/file/d/1gyBFdJL_k-0t9gcYjF5lJMKq-Xw_9fD9/view?usp=sharing).
+We provide a configuration file for the UAV [settings.json](https://drive.google.com/file/d/1COC-uGJZrwiN0prTnnxt4UzI9AGvXMMS/view?usp=sharing) move this file to directory: ```C:\Users\This PC\Documents\AirSim``` and [Ocean Environment](https://drive.google.com/file/d/1gyBFdJL_k-0t9gcYjF5lJMKq-Xw_9fD9/view?usp=sharing).
 
 ## 3. Data collection
 **Step 1:** Start the Unreal Engine and open the project containing the Ocean environment.
