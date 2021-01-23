@@ -160,13 +160,13 @@ class OrbitNavigator:
 
                 # video write
                 out.write(img)
-                # cv2.imshow('frame',img)
-                # if frame_rate % 3 == 0:
-                #     gps_state = self.client.getMultirotorState()
-                #     cv2.imwrite('./datasetGPS/ase' + '_' + str(victim_id) + '.png', img)
-                #     f.write('ase' + '_' + str(victim_id) + '.png' + "," + str(gps_state.gps_location.latitude) + "," + str(gps_state.gps_location.longitude) + "," + str(gps_state.gps_location.altitude) + '\n')
-                #     victim_id += 1
-                # frame_rate += 1
+                cv2.imshow('frame',img)
+                if frame_rate % 3 == 0:
+                    gps_state = self.client.getMultirotorState()
+                    cv2.imwrite('./datasetGPS/ase' + '_' + str(victim_id) + '.png', img)
+                    f.write('ase' + '_' + str(victim_id) + '.png' + "," + str(gps_state.gps_location.latitude) + "," + str(gps_state.gps_location.longitude) + "," + str(gps_state.gps_location.altitude) + '\n')
+                    victim_id += 1
+                frame_rate += 1
                 if cv2.waitKey(1) & 0xFF == ord('q'):
                     print('Stream Camera')
 
